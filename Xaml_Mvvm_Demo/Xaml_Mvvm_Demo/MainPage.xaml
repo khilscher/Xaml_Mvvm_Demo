@@ -3,9 +3,42 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:Xaml_Mvvm_Demo"
              x:Class="Xaml_Mvvm_Demo.MainPage">
+  
+  <StackLayout>
+    
+    <Label Text="Xamarin.Forms XAML MVVM Demo"
+         Font="Large"
+         VerticalOptions="Center"
+         HorizontalOptions="Center" />
+  
+    <StackLayout Spacing="15">
 
-  <Label Text="Welcome to Xamarin Forms!"
-           VerticalOptions="Center"
-           HorizontalOptions="Center" />
+      <Button x:Name ="Page1Button"
+              Text="XAML + Code Page"
+              VerticalOptions="Center"
+              HorizontalOptions="Center" 
+              Clicked="OnPage1ButtonClicked"/>
+      
+      <Button x:Name ="Page2Button"
+              Text="View to View Data Bindings"
+              VerticalOptions="Center"
+              HorizontalOptions="Center"
+              Clicked="OnPage2ButtonClicked"/>
+
+      <Button x:Name ="Page3Button"
+              Text="Data Bindings to MVVM"
+              VerticalOptions="Center"
+              HorizontalOptions="Center"
+              Clicked="OnPage3ButtonClicked"/>
+
+      <Button x:Name ="Page4Button"
+              Text="WebView"
+              VerticalOptions="Center"
+              HorizontalOptions="Center"
+              Clicked="OnPage4ButtonClicked"/>
+      
+    </StackLayout>
+    
+  </StackLayout>
 
 </ContentPage>

@@ -13,7 +13,7 @@ namespace Xaml_Mvvm_Demo
         {
             InitializeComponent();
 
-            MainPage = new Xaml_Mvvm_Demo.MainPage();
+            MainPage = new NavigationPage (new MainPage());
         }
 
         protected override void OnStart()
